@@ -52,7 +52,7 @@ Streamlit Community Cloud hosts lightweight Python/ML portfolio apps for free an
 ## 4. Power BI Desktop Assembly & Power BI Service Sharing Options
 
 ### Option A — Portfolio Standard (100% Free, Zero Tenant Restrictions)
-1. Follow `powerbi/POWER_BI_BUILD_GUIDE_FA.md` on Windows Power BI Desktop (free download) to import `data/powerbi_mart/*.csv` (or connect to SQL Server Express `ChurnIntelligenceDB`), apply `powerbi/theme/ChurnIntelligenceDarkTheme.json`, paste `powerbi/dax/measures_library.dax`, and save `powerbi/Customer_Churn_Intelligence_Action_Center.pbix`.
+1. Follow `powerbi/POWER_BI_BUILD_GUIDE.md` on Windows Power BI Desktop (free download) to import `data/powerbi_mart/*.csv` (or connect to SQL Server Express `ChurnIntelligenceDB`), apply `powerbi/theme/ChurnIntelligenceDarkTheme.json`, paste `powerbi/dax/measures_library.dax`, and save `powerbi/Customer_Churn_Intelligence_Action_Center.pbix`.
 2. Commit the saved `.pbix` file (< 5 MB) to the `powerbi/` folder in your GitHub repository alongside `powerbi/snapshots/PowerBI_Report_Pages_Preview.pdf`.
 3. Employers with Power BI Desktop can download `.pbix`, while non-Windows / executive reviewers immediately inspect the 4-page PNG/PDF snapshots in `README.md` AND use the live Streamlit app!
 

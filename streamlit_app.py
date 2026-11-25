@@ -137,19 +137,6 @@ def inject_design_system_css() -> None:
             color: {PALETTE['text_muted']};
             margin-bottom: 1rem;
         }}
-        .fa-helper {{
-            direction: rtl;
-            text-align: right;
-            background: rgba(94, 224, 181, 0.07);
-            border: 1px solid {PALETTE['border']};
-            border-right: 3px solid {PALETTE['primary']};
-            border-radius: 8px;
-            padding: 0.7rem 1rem;
-            font-size: 0.86rem;
-            color: {PALETTE['text_main']};
-            margin-bottom: 1rem;
-            line-height: 1.7;
-        }}
         .badge-crit {{ color: #FCA5A5; border: 1px solid #F87171; padding: 2px 8px; border-radius: 4px; font-weight: 700; font-size: 0.76rem; }}
         .badge-high {{ color: #FDE68A; border: 1px solid #FBBF24; padding: 2px 8px; border-radius: 4px; font-weight: 700; font-size: 0.76rem; }}
         .badge-mod  {{ color: #BFDBFE; border: 1px solid #8AB4F8; padding: 2px 8px; border-radius: 4px; font-weight: 700; font-size: 0.76rem; }}
@@ -484,7 +471,7 @@ def main() -> None:
 
     # Sidebar Navigation & Global Slicers
     with st.sidebar:
-        st.markdown(f"### {cfg['project']['title_en']}")
+        st.markdown(f"### {cfg['project']['title']}")
         st.caption(f"Model `{metrics['model_version']}` | Data `{metrics['data_version']}`")
 
         selected_nav = st.radio(
@@ -492,12 +479,6 @@ def main() -> None:
             options=NAV_OPTIONS,
             key="active_nav",
             help="Navigate across the 4 Power BI analytical views, the interactive scoring simulator, and technical artifacts.",
-        )
-
-        show_fa_helper = st.toggle(
-            "نمایش راهنمای دوزبانه فارسی (FA Guide)",
-            value=False,
-            help="Add concise Persian executive context alongside the standard English BI interface.",
         )
 
         st.markdown("---")
@@ -582,15 +563,6 @@ def main() -> None:
     # VIEW 1: EXECUTIVE CHURN SUMMARY (Power BI Page 1)
     # =========================================================================
     if selected_nav == "1. Churn Summary (BI Page 1)":
-        if show_fa_helper:
-            st.markdown(
-                '<div class="fa-helper">'
-                "<b>راهنمای فارسی (صفحهٔ ۱ — خلاصهٔ مدیریتی ریزش):</b> این صفحه نمای کلی نرخ ریزش مشاهده‌شده، تعداد مشترکین اولویت‌دار در صف تماس "
-                "و «مواجههٔ ناخالص قبض ماهانه در معرض ریسک (Proxy)» را نشان می‌دهد. ارقام مالی معادل جمع صورت‌حساب ماهانه هستند و سود خالص یا درآمد نجات‌یافتهٔ قطعی نیستند."
-                "</div>",
-                unsafe_allow_html=True,
-            )
-
         st.markdown(
             '<div class="governance-box">'
             "<b>Financial Proxy Governance:</b> Monthly exposure figures measure <i>gross recurring MonthlyCharges (USD/month)</i> "
@@ -766,15 +738,6 @@ def main() -> None:
     # VIEW 2: CHURN RISK REGISTER (Power BI Page 2)
     # =========================================================================
     elif selected_nav == "2. Churn Risk Register (BI Page 2)":
-        if show_fa_helper:
-            st.markdown(
-                '<div class="fa-helper">'
-                "<b>راهنمای فارسی (صفحهٔ ۲ — دفتر ثبت ریسک مشتریان):</b> فهرست مشترکین با شناسه‌های غیرحساس مصنوعی (<code>SYN-CUST-XXXXX</code>) "
-                "بر اساس احتمال کالیبره‌شدهٔ ریزش و صورت‌حساب ماهانه مرتب شده است. کدهای دلیل (SHAP) صرفاً هم‌بستگی آماری را نشان می‌دهند، نه علیت قطعی."
-                "</div>",
-                unsafe_allow_html=True,
-            )
-
         if filtered_df.empty:
             st.warning("No records match the active sidebar slicers.")
             return
@@ -913,15 +876,6 @@ def main() -> None:
     # VIEW 3: RECOVERY ACTION CENTER (Power BI Page 3)
     # =========================================================================
     elif selected_nav == "3. Recovery Action Center (BI Page 3)":
-        if show_fa_helper:
-            st.markdown(
-                '<div class="fa-helper">'
-                "<b>راهنمای فارسی (صفحهٔ ۳ — مرکز اقدام حفظ مشتری):</b> در این بخش می‌توانید ظرفیت تماس تیم و فرض هزینهٔ تماس را تغییر دهید، "
-                "صف اولویت‌بندی‌شدهٔ اقدام را فیلتر کنید، وضعیت تماس کارشناس را ثبت نمایید و خروجی عملیاتی CSV / Excel / PDF دریافت کنید."
-                "</div>",
-                unsafe_allow_html=True,
-            )
-
         st.markdown(
             '<div class="governance-box">'
             "<b>Non-Causal Playbook Notice:</b> Recommended retention actions are <i>analytical rule-based playbooks</i> mapped from "
@@ -1126,15 +1080,6 @@ def main() -> None:
     # VIEW 4: LIVE CUSTOMER SCORING & WHAT-IF DEMO
     # =========================================================================
     elif selected_nav == "4. Live Scoring & What-If Demo":
-        if show_fa_helper:
-            st.markdown(
-                '<div class="fa-helper">'
-                "<b>راهنمای فارسی (دموی امتیازدهی زنده):</b> بدون نیاز به آپلود فایل، یکی از ۴ پروفایل نمونه را انتخاب کنید یا ویژگی‌های مشترک را ویرایش نمایید "
-                "تا احتمال کالیبره‌شدهٔ ریزش، باند ریسک، سهم تک‌تک عوامل (TreeSHAP) و پیشنهاد اقدام تحلیلی محاسبه شود."
-                "</div>",
-                unsafe_allow_html=True,
-            )
-
         st.markdown("#### Interactive Subscriber Risk & Explainability Simulator")
         selected_profile_name = st.selectbox(
             "Load Sample Subscriber Profile (Ready-to-Test Presets)",
@@ -1314,15 +1259,6 @@ def main() -> None:
     # VIEW 5: MODEL & DATA QUALITY GOVERNANCE (Power BI Page 4)
     # =========================================================================
     elif selected_nav == "5. Model & Data Quality (BI Page 4)":
-        if show_fa_helper:
-            st.markdown(
-                '<div class="fa-helper">'
-                "<b>راهنمای فارسی (صفحهٔ ۴ — ارزیابی مدل و کیفیت داده):</b> تمام معیارهای نهایی روی بخش آزمون دست‌نخورده (۱٬۴۰۹ مشترک با نرخ طبیعی ۲۶٫۵۴٪) گزارش شده‌اند. "
-                "جدول زیر نشان می‌دهد چرا اعمال SMOTE روی داده، کالیبراسیون احتمالات (Brier / ECE) را تخریب می‌کند، درحالی‌که انتخاب آستانهٔ عملیاتی ۰٫۳۹ روی احتمال کالیبره‌شده Recall را بدون دست‌کاری دادهٔ تست به ۶۶٫۸۴٪ می‌رساند."
-                "</div>",
-                unsafe_allow_html=True,
-            )
-
         tm_op = metrics["test_metrics_operational"]
         tm_05 = metrics["test_metrics_default_050"]
         ci = metrics["test_bootstrap_95ci"]

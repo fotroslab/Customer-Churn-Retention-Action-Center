@@ -18,7 +18,7 @@ This portfolio project implements a complete, leakage-free analytical workflow:
 3. **Capacity- & Cost-Aware Operational Policy:** Decision cutoff optimized on the Validation split (`0.39` vs default `0.50`) subject to a `30%` care team outreach capacity cap, paired with additive **TreeSHAP** non-causal reason codes and rule-based outreach playbooks.
 4. **Power BI Semantic Pack + Browser-Ready Interactive App:** Ships an 8-table **Power BI Star Schema**, **25 documented DAX measures**, **Power Query (M) connectors**, **Dark Executive Theme JSON (`#0B1220`)**, **4-page executed PNG/PDF snapshots**, and a **6-view interactive Streamlit application** so reviewers can test every workflow in a browser without installing Power BI Desktop or SQL Server.
 
-> **Native `.pbix` Transparency Note:** Binary `.pbix` files require Microsoft's proprietary Windows Power BI Desktop (`VertiPaq`) engine to compile. Rather than shipping a renamed or non-native file, this repository provides the complete generated Star Schema CSVs, T-SQL views, DAX Query View script, Power Query connectors, JSON theme, and step-by-step assembly guide (`powerbi/POWER_BI_BUILD_GUIDE_FA.md`), alongside executed 4-page snapshots (`powerbi/snapshots/`).
+> **Native `.pbix` Transparency Note:** Binary `.pbix` files require Microsoft's proprietary Windows Power BI Desktop (`VertiPaq`) engine to compile. Rather than shipping a renamed or non-native file, this repository provides the complete generated Star Schema CSVs, T-SQL views, DAX Query View script, Power Query connectors, JSON theme, and step-by-step assembly guide (`powerbi/POWER_BI_BUILD_GUIDE.md`), alongside executed 4-page snapshots (`powerbi/snapshots/`).
 
 ---
 
@@ -81,7 +81,7 @@ The SQL pipeline (`sql/01_*.sql` through `sql/05_*.sql`) enforces `CHECK` constr
 ## 5. Key Features
 
 - **4-Page Power BI Semantic Architecture** (`Churn Summary`, `Churn Risk Register`, `Recovery Action Center`, `Model & Data Quality`) backed by a clean Star Schema (`dim_customer`, `dim_contract_billing`, `dim_service_bundle`, `dim_risk_band` → `fact_customer_churn_scoring`).
-- **6-View Interactive Web Application (`streamlit_app.py`)** adhering to the `#0B1220 / #141F30 / #5EE0B5 / #8AB4F8` executive dark design system, including optional bilingual Persian guidance (`FA Guide`).
+- **6-View Interactive Web Application (`streamlit_app.py`)** adhering to the `#0B1220 / #141F30 / #5EE0B5 / #8AB4F8` executive dark design system, with full English BI terminology throughout.
 - **Interactive Capacity & Cost Policy Planner** + **Care Specialist Outreach Logger** persisting follow-up status and call outcomes directly to the warehouse.
 - **Live Subscriber Scoring & What-If Sensitivity Demo** with 4 one-click sample profiles, strict input validation, and customer-level TreeSHAP explanations.
 - **Operational Exports:** Filtered CSV registers, multi-sheet Excel (`.xlsx`) operations packs, and 1-page Executive PDF briefs.
@@ -143,7 +143,7 @@ Selected Champion: **`LightGBM | Natural Prior (Regularized)`** (`churn-risk-v1.
 2. **Untouched Natural F1 vs Oversampled F1:** An `F1` of `0.6337` on a natural `26.54%` positive test set cannot be compared directly against `F1 ≈ 0.90` numbers reported on `50% / 50%` SMOTE-balanced test sets (where random precision is artificially doubled).
 3. **Observational SHAP ≠ Causal Intervention Lift:** `RC_CONTRACT_MTM` or `RC_ONBOARDING_EARLY` identify *who* is at risk and *what attributes correlate with risk*, not *whether* an outreach call will reduce churn. Some contacted subscribers may exhibit "sleeping dog" sensitization if pitched aggressively.
 4. **Gross Billing vs Net Margin:** `MonthlyCharges` is gross billed price, not net contribution margin or Customer Lifetime Value (CLV).
-5. **Power BI Native File Compilation:** Final `.pbix` compilation requires opening the generated `data/powerbi_mart/` tables (or SQL Server `ChurnIntelligenceDB`) inside Windows Power BI Desktop per `powerbi/POWER_BI_BUILD_GUIDE_FA.md`.
+5. **Power BI Native File Compilation:** Final `.pbix` compilation requires opening the generated `data/powerbi_mart/` tables (or SQL Server `ChurnIntelligenceDB`) inside Windows Power BI Desktop per `powerbi/POWER_BI_BUILD_GUIDE.md`.
 
 ---
 
@@ -175,7 +175,7 @@ streamlit run streamlit_app.py
 
 See **[`DEPLOYMENT.md`](DEPLOYMENT.md)** for full step-by-step browser-only instructions (no local Git or VS Code required):
 - **Interactive Web Demo (Free, Public Link, Zero Viewer Login):** Deploy `streamlit_app.py` on **Streamlit Community Cloud** directly from your public GitHub repository.
-- **Power BI Desktop & Service Sharing:** Build `Customer_Churn_Intelligence_Action_Center.pbix` using `powerbi/POWER_BI_BUILD_GUIDE_FA.md`. Note that Power BI `Publish to web` requires a Microsoft Fabric work/school tenant with admin enablement and exposes underlying report data publicly on the internet—use **only** with public/synthetic portfolio datasets, never confidential customer records.
+- **Power BI Desktop & Service Sharing:** Build `Customer_Churn_Intelligence_Action_Center.pbix` using `powerbi/POWER_BI_BUILD_GUIDE.md`. Note that Power BI `Publish to web` requires a Microsoft Fabric work/school tenant with admin enablement and exposes underlying report data publicly on the internet—use **only** with public/synthetic portfolio datasets, never confidential customer records.
 
 ---
 
@@ -203,7 +203,7 @@ customer-churn-intelligence-action-center/
 │   ├── powerquery/                   # SQL Server & CSV Mart Power Query (M) connectors
 │   ├── snapshots/                    # Executed 4-page PNG snapshots + compiled PDF preview
 │   ├── MODEL_SCHEMA_DIAGRAM.svg      # Star Schema entity-relationship diagram
-│   └── POWER_BI_BUILD_GUIDE_FA.md    # Step-by-step Power BI Desktop assembly & refresh guide
+│   └── POWER_BI_BUILD_GUIDE.md        # Step-by-step Power BI Desktop assembly & refresh guide
 ├── sql/                              # 5 production Microsoft SQL Server (T-SQL) scripts
 ├── scripts/run_pipeline.py           # End-to-end orchestrator
 ├── src/                              # Modular ingestion, features, modeling, SHAP, snapshots & exports
