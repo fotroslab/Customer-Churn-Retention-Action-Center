@@ -1,7 +1,0 @@
-check_stage,check_name,metric_value,expected_rule,check_status,notes,data_version,logged_at_utc
-STAGING,raw_row_count,7043.0,"Expected 7,043 rows in IBM Telco benchmark",PASS,Ingested raw CSV records into stg_telco_customer_raw,IBM-Telco-v1.0-7043,2026-11-25T06:23:47Z
-STAGING,duplicate_customer_id_count,0.0,0 duplicate customer keys,PASS,Checked uniqueness of source customer identifier prior to pseudonymization,IBM-Telco-v1.0-7043,2026-11-25T06:23:47Z
-STAGING,null_customer_id_count,0.0,0 empty customer identifiers,PASS,Verified primary identifier completeness,IBM-Telco-v1.0-7043,2026-11-25T06:23:47Z
-CLEAN,zero_tenure_blank_total_charges,11.0,Blank TotalCharges allowed ONLY when tenure_months = 0 (mapped to $0.00),PASS,11 onboarding (tenure=0) rows mapped deterministically to TotalCharges=0.00,IBM-Telco-v1.0-7043,2026-11-25T06:23:47Z
-CLEAN,domain_range_violations,0.0,0 negative charges or out-of-range tenure values,PASS,"Checked tenure [0, 120], monthly_charges >= 0, total_charges >= 0",IBM-Telco-v1.0-7043,2026-11-25T06:23:47Z
-FEATURE,observed_churn_base_rate,0.2654,Natural churn rate between 0.05 and 0.50 (~0.2654 on IBM benchmark),PASS,1869 churned of 7043 total customers,IBM-Telco-v1.0-7043,2026-11-25T06:23:47Z
