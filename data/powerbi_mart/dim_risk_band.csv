@@ -1,0 +1,5 @@
+risk_band_key,risk_band,sort_order,probability_band_desc,sla_guidance
+1,Critical Risk,1,>= 0.65,Within 24h Priority Care Queue
+2,High Risk,2,0.45 - 0.64,Within 72h Proactive Outreach
+3,Moderate Risk,3,Operational Threshold - 0.44,Automated Digital Check-In
+4,Low Risk,4,Below Operational Threshold,Standard Lifecycle Experience

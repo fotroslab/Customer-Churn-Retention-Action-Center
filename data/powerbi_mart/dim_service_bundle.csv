@@ -1,0 +1,323 @@
+service_bundle_key,internet_service,phone_service,multiple_lines,online_security,online_backup,device_protection,tech_support,streaming_tv,streaming_movies,active_addon_count,protection_support_count,streaming_addon_count,phone_service_text
+1,DSL,0,No phone service,No,No,No,No,No,No,0,0,0,No
+2,DSL,0,No phone service,No,Yes,Yes,Yes,Yes,Yes,5,3,2,No
+3,DSL,0,No phone service,No,Yes,No,No,Yes,Yes,3,1,2,No
+4,DSL,0,No phone service,No,No,No,Yes,Yes,Yes,3,1,2,No
+5,DSL,0,No phone service,No,No,No,Yes,No,No,1,1,0,No
+6,DSL,0,No phone service,No,Yes,Yes,Yes,Yes,No,4,3,1,No
+7,DSL,0,No phone service,No,Yes,Yes,Yes,No,No,3,3,0,No
+8,DSL,0,No phone service,No,No,No,No,Yes,No,1,0,1,No
+9,DSL,0,No phone service,No,No,Yes,Yes,No,No,2,2,0,No
+10,DSL,0,No phone service,No,No,No,No,Yes,Yes,2,0,2,No
+11,DSL,0,No phone service,No,No,No,No,No,Yes,1,0,1,No
+12,DSL,0,No phone service,No,No,Yes,Yes,Yes,Yes,4,2,2,No
+13,DSL,0,No phone service,No,Yes,No,No,Yes,No,2,1,1,No
+14,DSL,0,No phone service,No,Yes,No,No,No,No,1,1,0,No
+15,DSL,0,No phone service,No,No,No,Yes,Yes,No,2,1,1,No
+16,DSL,0,No phone service,No,No,Yes,No,No,No,1,1,0,No
+17,DSL,0,No phone service,No,Yes,No,Yes,No,No,2,2,0,No
+18,DSL,0,No phone service,No,Yes,Yes,No,No,No,2,2,0,No
+19,DSL,0,No phone service,No,Yes,Yes,Yes,No,Yes,4,3,1,No
+20,DSL,0,No phone service,No,Yes,No,Yes,Yes,Yes,4,2,2,No
+21,DSL,0,No phone service,No,No,Yes,Yes,No,Yes,3,2,1,No
+22,DSL,0,No phone service,No,Yes,Yes,No,Yes,No,3,2,1,No
+23,DSL,0,No phone service,No,No,Yes,No,Yes,Yes,3,1,2,No
+24,DSL,0,No phone service,No,Yes,No,No,No,Yes,2,1,1,No
+25,DSL,0,No phone service,No,Yes,Yes,No,Yes,Yes,4,2,2,No
+26,DSL,0,No phone service,No,Yes,Yes,No,No,Yes,3,2,1,No
+27,DSL,0,No phone service,No,No,Yes,Yes,Yes,No,3,2,1,No
+28,DSL,0,No phone service,No,No,No,Yes,No,Yes,2,1,1,No
+29,DSL,0,No phone service,No,No,Yes,No,No,Yes,2,1,1,No
+30,DSL,0,No phone service,No,No,Yes,No,Yes,No,2,1,1,No
+31,DSL,0,No phone service,No,Yes,No,Yes,No,Yes,3,2,1,No
+32,DSL,0,No phone service,No,Yes,No,Yes,Yes,No,3,2,1,No
+33,DSL,0,No phone service,Yes,No,No,Yes,Yes,No,3,2,1,No
+34,DSL,0,No phone service,Yes,Yes,Yes,Yes,No,No,4,4,0,No
+35,DSL,0,No phone service,Yes,No,Yes,Yes,Yes,Yes,5,3,2,No
+36,DSL,0,No phone service,Yes,No,No,No,No,No,1,1,0,No
+37,DSL,0,No phone service,Yes,No,Yes,Yes,No,No,3,3,0,No
+38,DSL,0,No phone service,Yes,Yes,Yes,No,No,No,3,3,0,No
+39,DSL,0,No phone service,Yes,No,No,Yes,No,No,2,2,0,No
+40,DSL,0,No phone service,Yes,No,No,Yes,No,Yes,3,2,1,No
+41,DSL,0,No phone service,Yes,No,No,No,Yes,Yes,3,1,2,No
+42,DSL,0,No phone service,Yes,Yes,Yes,Yes,Yes,No,5,4,1,No
+43,DSL,0,No phone service,Yes,No,Yes,No,No,Yes,3,2,1,No
+44,DSL,0,No phone service,Yes,Yes,Yes,No,Yes,Yes,5,3,2,No
+45,DSL,0,No phone service,Yes,Yes,Yes,Yes,Yes,Yes,6,4,2,No
+46,DSL,0,No phone service,Yes,No,Yes,Yes,No,Yes,4,3,1,No
+47,DSL,0,No phone service,Yes,No,No,No,Yes,No,2,1,1,No
+48,DSL,0,No phone service,Yes,No,Yes,No,Yes,Yes,4,2,2,No
+49,DSL,0,No phone service,Yes,Yes,No,Yes,Yes,Yes,5,3,2,No
+50,DSL,0,No phone service,Yes,Yes,No,Yes,No,No,3,3,0,No
+51,DSL,0,No phone service,Yes,Yes,Yes,Yes,No,Yes,5,4,1,No
+52,DSL,0,No phone service,Yes,No,Yes,No,No,No,2,2,0,No
+53,DSL,0,No phone service,Yes,No,Yes,Yes,Yes,No,4,3,1,No
+54,DSL,0,No phone service,Yes,Yes,No,No,No,No,2,2,0,No
+55,DSL,0,No phone service,Yes,Yes,No,No,Yes,No,3,2,1,No
+56,DSL,0,No phone service,Yes,Yes,Yes,No,No,Yes,4,3,1,No
+57,DSL,0,No phone service,Yes,No,Yes,No,Yes,No,3,2,1,No
+58,DSL,0,No phone service,Yes,Yes,No,Yes,No,Yes,4,3,1,No
+59,DSL,0,No phone service,Yes,Yes,No,No,Yes,Yes,4,2,2,No
+60,DSL,0,No phone service,Yes,No,No,No,No,Yes,2,1,1,No
+61,DSL,0,No phone service,Yes,No,No,Yes,Yes,Yes,4,2,2,No
+62,DSL,0,No phone service,Yes,Yes,No,No,No,Yes,3,2,1,No
+63,DSL,0,No phone service,Yes,Yes,No,Yes,Yes,No,4,3,1,No
+64,DSL,0,No phone service,Yes,Yes,Yes,No,Yes,No,4,3,1,No
+65,DSL,1,No,No,Yes,No,Yes,Yes,No,3,2,1,Yes
+66,DSL,1,No,No,No,No,Yes,Yes,Yes,3,1,2,Yes
+67,DSL,1,No,No,Yes,Yes,Yes,Yes,Yes,5,3,2,Yes
+68,DSL,1,No,No,Yes,No,No,No,No,1,1,0,Yes
+69,DSL,1,No,No,No,No,No,No,No,0,0,0,Yes
+70,DSL,1,No,No,No,Yes,No,No,No,1,1,0,Yes
+71,DSL,1,No,No,No,Yes,Yes,Yes,Yes,4,2,2,Yes
+72,DSL,1,No,No,No,No,No,Yes,No,1,0,1,Yes
+73,DSL,1,No,No,No,Yes,Yes,Yes,No,3,2,1,Yes
+74,DSL,1,No,No,Yes,No,Yes,No,Yes,3,2,1,Yes
+75,DSL,1,No,No,Yes,No,No,Yes,No,2,1,1,Yes
+76,DSL,1,No,No,Yes,No,Yes,No,No,2,2,0,Yes
+77,DSL,1,No,No,No,No,Yes,No,No,1,1,0,Yes
+78,DSL,1,No,No,Yes,Yes,Yes,No,No,3,3,0,Yes
+79,DSL,1,No,No,No,No,No,No,Yes,1,0,1,Yes
+80,DSL,1,No,No,No,No,No,Yes,Yes,2,0,2,Yes
+81,DSL,1,No,No,Yes,No,Yes,Yes,Yes,4,2,2,Yes
+82,DSL,1,No,No,Yes,Yes,Yes,Yes,No,4,3,1,Yes
+83,DSL,1,No,No,No,Yes,Yes,No,No,2,2,0,Yes
+84,DSL,1,No,No,No,Yes,No,Yes,No,2,1,1,Yes
+85,DSL,1,No,No,Yes,Yes,Yes,No,Yes,4,3,1,Yes
+86,DSL,1,No,No,No,No,Yes,Yes,No,2,1,1,Yes
+87,DSL,1,No,No,No,Yes,No,Yes,Yes,3,1,2,Yes
+88,DSL,1,No,No,No,Yes,Yes,No,Yes,3,2,1,Yes
+89,DSL,1,No,No,Yes,Yes,No,No,No,2,2,0,Yes
+90,DSL,1,No,No,Yes,No,No,Yes,Yes,3,1,2,Yes
+91,DSL,1,No,No,No,No,Yes,No,Yes,2,1,1,Yes
+92,DSL,1,No,No,No,Yes,No,No,Yes,2,1,1,Yes
+93,DSL,1,No,No,Yes,No,No,No,Yes,2,1,1,Yes
+94,DSL,1,No,No,Yes,Yes,No,Yes,Yes,4,2,2,Yes
+95,DSL,1,No,No,Yes,Yes,No,Yes,No,3,2,1,Yes
+96,DSL,1,No,No,Yes,Yes,No,No,Yes,3,2,1,Yes
+97,DSL,1,No,Yes,No,No,No,No,No,1,1,0,Yes
+98,DSL,1,No,Yes,No,Yes,No,No,Yes,3,2,1,Yes
+99,DSL,1,No,Yes,Yes,Yes,No,No,No,3,3,0,Yes
+100,DSL,1,No,Yes,No,No,Yes,No,No,2,2,0,Yes
+101,DSL,1,No,Yes,Yes,No,No,Yes,Yes,4,2,2,Yes
+102,DSL,1,No,Yes,Yes,No,No,No,No,2,2,0,Yes
+103,DSL,1,No,Yes,Yes,Yes,Yes,Yes,Yes,6,4,2,Yes
+104,DSL,1,No,Yes,Yes,Yes,Yes,Yes,No,5,4,1,Yes
+105,DSL,1,No,Yes,Yes,No,Yes,No,No,3,3,0,Yes
+106,DSL,1,No,Yes,Yes,Yes,No,Yes,Yes,5,3,2,Yes
+107,DSL,1,No,Yes,No,Yes,Yes,No,No,3,3,0,Yes
+108,DSL,1,No,Yes,No,No,Yes,Yes,Yes,4,2,2,Yes
+109,DSL,1,No,Yes,No,No,No,No,Yes,2,1,1,Yes
+110,DSL,1,No,Yes,No,No,No,Yes,Yes,3,1,2,Yes
+111,DSL,1,No,Yes,No,Yes,Yes,Yes,No,4,3,1,Yes
+112,DSL,1,No,Yes,No,Yes,Yes,No,Yes,4,3,1,Yes
+113,DSL,1,No,Yes,Yes,No,Yes,No,Yes,4,3,1,Yes
+114,DSL,1,No,Yes,Yes,Yes,No,Yes,No,4,3,1,Yes
+115,DSL,1,No,Yes,No,Yes,No,Yes,Yes,4,2,2,Yes
+116,DSL,1,No,Yes,No,Yes,Yes,Yes,Yes,5,3,2,Yes
+117,DSL,1,No,Yes,Yes,No,Yes,Yes,Yes,5,3,2,Yes
+118,DSL,1,No,Yes,No,Yes,No,No,No,2,2,0,Yes
+119,DSL,1,No,Yes,Yes,No,Yes,Yes,No,4,3,1,Yes
+120,DSL,1,No,Yes,No,No,Yes,No,Yes,3,2,1,Yes
+121,DSL,1,No,Yes,No,No,No,Yes,No,2,1,1,Yes
+122,DSL,1,No,Yes,No,Yes,No,Yes,No,3,2,1,Yes
+123,DSL,1,No,Yes,Yes,Yes,Yes,No,Yes,5,4,1,Yes
+124,DSL,1,No,Yes,Yes,Yes,No,No,Yes,4,3,1,Yes
+125,DSL,1,No,Yes,Yes,No,No,No,Yes,3,2,1,Yes
+126,DSL,1,No,Yes,Yes,Yes,Yes,No,No,4,4,0,Yes
+127,DSL,1,No,Yes,Yes,No,No,Yes,No,3,2,1,Yes
+128,DSL,1,No,Yes,No,No,Yes,Yes,No,3,2,1,Yes
+129,DSL,1,Yes,No,No,No,No,No,Yes,1,0,1,Yes
+130,DSL,1,Yes,No,Yes,Yes,Yes,Yes,Yes,5,3,2,Yes
+131,DSL,1,Yes,No,No,No,No,No,No,0,0,0,Yes
+132,DSL,1,Yes,No,Yes,Yes,No,No,Yes,3,2,1,Yes
+133,DSL,1,Yes,No,No,Yes,Yes,No,No,2,2,0,Yes
+134,DSL,1,Yes,No,Yes,No,Yes,Yes,Yes,4,2,2,Yes
+135,DSL,1,Yes,No,Yes,Yes,No,No,No,2,2,0,Yes
+136,DSL,1,Yes,No,No,Yes,No,No,Yes,2,1,1,Yes
+137,DSL,1,Yes,No,No,No,No,Yes,No,1,0,1,Yes
+138,DSL,1,Yes,No,Yes,Yes,No,Yes,Yes,4,2,2,Yes
+139,DSL,1,Yes,No,No,Yes,No,Yes,Yes,3,1,2,Yes
+140,DSL,1,Yes,No,Yes,Yes,No,Yes,No,3,2,1,Yes
+141,DSL,1,Yes,No,Yes,No,Yes,Yes,No,3,2,1,Yes
+142,DSL,1,Yes,No,No,Yes,Yes,Yes,Yes,4,2,2,Yes
+143,DSL,1,Yes,No,No,Yes,Yes,No,Yes,3,2,1,Yes
+144,DSL,1,Yes,No,Yes,Yes,Yes,Yes,No,4,3,1,Yes
+145,DSL,1,Yes,No,No,No,Yes,Yes,No,2,1,1,Yes
+146,DSL,1,Yes,No,Yes,Yes,Yes,No,No,3,3,0,Yes
+147,DSL,1,Yes,No,Yes,No,No,No,Yes,2,1,1,Yes
+148,DSL,1,Yes,No,Yes,No,No,No,No,1,1,0,Yes
+149,DSL,1,Yes,No,Yes,No,No,Yes,Yes,3,1,2,Yes
+150,DSL,1,Yes,No,No,No,Yes,No,No,1,1,0,Yes
+151,DSL,1,Yes,No,No,No,Yes,Yes,Yes,3,1,2,Yes
+152,DSL,1,Yes,No,No,No,Yes,No,Yes,2,1,1,Yes
+153,DSL,1,Yes,No,No,Yes,No,Yes,No,2,1,1,Yes
+154,DSL,1,Yes,No,Yes,No,Yes,No,No,2,2,0,Yes
+155,DSL,1,Yes,No,Yes,No,No,Yes,No,2,1,1,Yes
+156,DSL,1,Yes,No,No,Yes,Yes,Yes,No,3,2,1,Yes
+157,DSL,1,Yes,No,No,No,No,Yes,Yes,2,0,2,Yes
+158,DSL,1,Yes,No,No,Yes,No,No,No,1,1,0,Yes
+159,DSL,1,Yes,No,Yes,Yes,Yes,No,Yes,4,3,1,Yes
+160,DSL,1,Yes,No,Yes,No,Yes,No,Yes,3,2,1,Yes
+161,DSL,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6,4,2,Yes
+162,DSL,1,Yes,Yes,Yes,Yes,Yes,Yes,No,5,4,1,Yes
+163,DSL,1,Yes,Yes,No,No,No,No,Yes,2,1,1,Yes
+164,DSL,1,Yes,Yes,No,Yes,Yes,Yes,Yes,5,3,2,Yes
+165,DSL,1,Yes,Yes,Yes,Yes,Yes,No,No,4,4,0,Yes
+166,DSL,1,Yes,Yes,Yes,Yes,Yes,No,Yes,5,4,1,Yes
+167,DSL,1,Yes,Yes,No,No,Yes,Yes,No,3,2,1,Yes
+168,DSL,1,Yes,Yes,Yes,No,Yes,No,No,3,3,0,Yes
+169,DSL,1,Yes,Yes,Yes,Yes,No,No,No,3,3,0,Yes
+170,DSL,1,Yes,Yes,Yes,No,Yes,Yes,Yes,5,3,2,Yes
+171,DSL,1,Yes,Yes,Yes,Yes,No,Yes,Yes,5,3,2,Yes
+172,DSL,1,Yes,Yes,No,Yes,Yes,No,No,3,3,0,Yes
+173,DSL,1,Yes,Yes,Yes,No,Yes,Yes,No,4,3,1,Yes
+174,DSL,1,Yes,Yes,No,No,Yes,No,No,2,2,0,Yes
+175,DSL,1,Yes,Yes,No,Yes,Yes,No,Yes,4,3,1,Yes
+176,DSL,1,Yes,Yes,Yes,Yes,No,No,Yes,4,3,1,Yes
+177,DSL,1,Yes,Yes,No,No,No,No,No,1,1,0,Yes
+178,DSL,1,Yes,Yes,No,No,No,Yes,No,2,1,1,Yes
+179,DSL,1,Yes,Yes,Yes,No,No,Yes,Yes,4,2,2,Yes
+180,DSL,1,Yes,Yes,No,Yes,Yes,Yes,No,4,3,1,Yes
+181,DSL,1,Yes,Yes,No,No,Yes,No,Yes,3,2,1,Yes
+182,DSL,1,Yes,Yes,No,Yes,No,No,Yes,3,2,1,Yes
+183,DSL,1,Yes,Yes,Yes,No,Yes,No,Yes,4,3,1,Yes
+184,DSL,1,Yes,Yes,Yes,Yes,No,Yes,No,4,3,1,Yes
+185,DSL,1,Yes,Yes,Yes,No,No,No,Yes,3,2,1,Yes
+186,DSL,1,Yes,Yes,No,No,No,Yes,Yes,3,1,2,Yes
+187,DSL,1,Yes,Yes,Yes,No,No,No,No,2,2,0,Yes
+188,DSL,1,Yes,Yes,No,No,Yes,Yes,Yes,4,2,2,Yes
+189,DSL,1,Yes,Yes,No,Yes,No,Yes,No,3,2,1,Yes
+190,DSL,1,Yes,Yes,No,Yes,No,Yes,Yes,4,2,2,Yes
+191,DSL,1,Yes,Yes,Yes,No,No,Yes,No,3,2,1,Yes
+192,DSL,1,Yes,Yes,No,Yes,No,No,No,2,2,0,Yes
+193,Fiber optic,1,No,No,No,Yes,No,No,No,1,1,0,Yes
+194,Fiber optic,1,No,No,Yes,Yes,No,Yes,Yes,4,2,2,Yes
+195,Fiber optic,1,No,No,No,No,Yes,Yes,No,2,1,1,Yes
+196,Fiber optic,1,No,No,No,No,No,No,No,0,0,0,Yes
+197,Fiber optic,1,No,No,Yes,Yes,Yes,Yes,Yes,5,3,2,Yes
+198,Fiber optic,1,No,No,No,No,No,Yes,Yes,2,0,2,Yes
+199,Fiber optic,1,No,No,No,Yes,Yes,Yes,Yes,4,2,2,Yes
+200,Fiber optic,1,No,No,No,No,Yes,Yes,Yes,3,1,2,Yes
+201,Fiber optic,1,No,No,Yes,No,No,Yes,Yes,3,1,2,Yes
+202,Fiber optic,1,No,No,No,Yes,No,Yes,Yes,3,1,2,Yes
+203,Fiber optic,1,No,No,No,Yes,No,No,Yes,2,1,1,Yes
+204,Fiber optic,1,No,No,Yes,No,No,No,Yes,2,1,1,Yes
+205,Fiber optic,1,No,No,No,No,Yes,No,No,1,1,0,Yes
+206,Fiber optic,1,No,No,No,Yes,No,Yes,No,2,1,1,Yes
+207,Fiber optic,1,No,No,No,No,No,No,Yes,1,0,1,Yes
+208,Fiber optic,1,No,No,Yes,Yes,No,No,Yes,3,2,1,Yes
+209,Fiber optic,1,No,No,No,No,No,Yes,No,1,0,1,Yes
+210,Fiber optic,1,No,No,Yes,No,Yes,Yes,Yes,4,2,2,Yes
+211,Fiber optic,1,No,No,No,Yes,Yes,No,No,2,2,0,Yes
+212,Fiber optic,1,No,No,No,No,Yes,No,Yes,2,1,1,Yes
+213,Fiber optic,1,No,No,Yes,No,No,Yes,No,2,1,1,Yes
+214,Fiber optic,1,No,No,Yes,No,No,No,No,1,1,0,Yes
+215,Fiber optic,1,No,No,Yes,Yes,Yes,No,Yes,4,3,1,Yes
+216,Fiber optic,1,No,No,Yes,No,Yes,No,No,2,2,0,Yes
+217,Fiber optic,1,No,No,Yes,Yes,Yes,No,No,3,3,0,Yes
+218,Fiber optic,1,No,No,Yes,Yes,No,No,No,2,2,0,Yes
+219,Fiber optic,1,No,No,No,Yes,Yes,Yes,No,3,2,1,Yes
+220,Fiber optic,1,No,No,Yes,No,Yes,Yes,No,3,2,1,Yes
+221,Fiber optic,1,No,No,No,Yes,Yes,No,Yes,3,2,1,Yes
+222,Fiber optic,1,No,No,Yes,No,Yes,No,Yes,3,2,1,Yes
+223,Fiber optic,1,No,No,Yes,Yes,No,Yes,No,3,2,1,Yes
+224,Fiber optic,1,No,No,Yes,Yes,Yes,Yes,No,4,3,1,Yes
+225,Fiber optic,1,No,Yes,Yes,Yes,Yes,Yes,Yes,6,4,2,Yes
+226,Fiber optic,1,No,Yes,No,No,No,Yes,No,2,1,1,Yes
+227,Fiber optic,1,No,Yes,Yes,No,Yes,No,No,3,3,0,Yes
+228,Fiber optic,1,No,Yes,Yes,No,No,Yes,No,3,2,1,Yes
+229,Fiber optic,1,No,Yes,No,No,No,No,No,1,1,0,Yes
+230,Fiber optic,1,No,Yes,Yes,No,Yes,Yes,Yes,5,3,2,Yes
+231,Fiber optic,1,No,Yes,No,Yes,Yes,Yes,Yes,5,3,2,Yes
+232,Fiber optic,1,No,Yes,Yes,Yes,No,No,No,3,3,0,Yes
+233,Fiber optic,1,No,Yes,Yes,No,Yes,Yes,No,4,3,1,Yes
+234,Fiber optic,1,No,Yes,No,Yes,No,Yes,Yes,4,2,2,Yes
+235,Fiber optic,1,No,Yes,Yes,Yes,Yes,No,Yes,5,4,1,Yes
+236,Fiber optic,1,No,Yes,No,No,Yes,Yes,Yes,4,2,2,Yes
+237,Fiber optic,1,No,Yes,No,No,No,Yes,Yes,3,1,2,Yes
+238,Fiber optic,1,No,Yes,No,No,No,No,Yes,2,1,1,Yes
+239,Fiber optic,1,No,Yes,No,No,Yes,No,No,2,2,0,Yes
+240,Fiber optic,1,No,Yes,No,Yes,No,Yes,No,3,2,1,Yes
+241,Fiber optic,1,No,Yes,Yes,No,No,Yes,Yes,4,2,2,Yes
+242,Fiber optic,1,No,Yes,No,Yes,No,No,No,2,2,0,Yes
+243,Fiber optic,1,No,Yes,Yes,Yes,No,Yes,Yes,5,3,2,Yes
+244,Fiber optic,1,No,Yes,Yes,No,No,No,No,2,2,0,Yes
+245,Fiber optic,1,No,Yes,Yes,No,Yes,No,Yes,4,3,1,Yes
+246,Fiber optic,1,No,Yes,No,Yes,Yes,Yes,No,4,3,1,Yes
+247,Fiber optic,1,No,Yes,Yes,No,No,No,Yes,3,2,1,Yes
+248,Fiber optic,1,No,Yes,No,No,Yes,No,Yes,3,2,1,Yes
+249,Fiber optic,1,No,Yes,No,Yes,No,No,Yes,3,2,1,Yes
+250,Fiber optic,1,No,Yes,No,Yes,Yes,No,Yes,4,3,1,Yes
+251,Fiber optic,1,No,Yes,Yes,Yes,No,Yes,No,4,3,1,Yes
+252,Fiber optic,1,No,Yes,No,No,Yes,Yes,No,3,2,1,Yes
+253,Fiber optic,1,No,Yes,Yes,Yes,No,No,Yes,4,3,1,Yes
+254,Fiber optic,1,No,Yes,No,Yes,Yes,No,No,3,3,0,Yes
+255,Fiber optic,1,No,Yes,Yes,Yes,Yes,Yes,No,5,4,1,Yes
+256,Fiber optic,1,No,Yes,Yes,Yes,Yes,No,No,4,4,0,Yes
+257,Fiber optic,1,Yes,No,Yes,Yes,No,No,Yes,3,2,1,Yes
+258,Fiber optic,1,Yes,No,No,No,No,No,No,0,0,0,Yes
+259,Fiber optic,1,Yes,No,Yes,Yes,No,Yes,No,3,2,1,Yes
+260,Fiber optic,1,Yes,No,No,No,No,Yes,No,1,0,1,Yes
+261,Fiber optic,1,Yes,No,No,No,Yes,Yes,Yes,3,1,2,Yes
+262,Fiber optic,1,Yes,No,Yes,Yes,No,Yes,Yes,4,2,2,Yes
+263,Fiber optic,1,Yes,No,Yes,Yes,Yes,Yes,Yes,5,3,2,Yes
+264,Fiber optic,1,Yes,No,No,Yes,No,Yes,Yes,3,1,2,Yes
+265,Fiber optic,1,Yes,No,No,Yes,No,Yes,No,2,1,1,Yes
+266,Fiber optic,1,Yes,No,Yes,No,No,No,Yes,2,1,1,Yes
+267,Fiber optic,1,Yes,No,Yes,No,No,Yes,No,2,1,1,Yes
+268,Fiber optic,1,Yes,No,Yes,No,No,No,No,1,1,0,Yes
+269,Fiber optic,1,Yes,No,Yes,Yes,No,No,No,2,2,0,Yes
+270,Fiber optic,1,Yes,No,No,No,No,Yes,Yes,2,0,2,Yes
+271,Fiber optic,1,Yes,No,No,No,No,No,Yes,1,0,1,Yes
+272,Fiber optic,1,Yes,No,Yes,No,No,Yes,Yes,3,1,2,Yes
+273,Fiber optic,1,Yes,No,No,Yes,No,No,No,1,1,0,Yes
+274,Fiber optic,1,Yes,No,No,Yes,Yes,Yes,Yes,4,2,2,Yes
+275,Fiber optic,1,Yes,No,Yes,No,Yes,Yes,Yes,4,2,2,Yes
+276,Fiber optic,1,Yes,No,Yes,Yes,Yes,Yes,No,4,3,1,Yes
+277,Fiber optic,1,Yes,No,No,No,Yes,Yes,No,2,1,1,Yes
+278,Fiber optic,1,Yes,No,No,Yes,No,No,Yes,2,1,1,Yes
+279,Fiber optic,1,Yes,No,No,Yes,Yes,No,Yes,3,2,1,Yes
+280,Fiber optic,1,Yes,No,Yes,Yes,Yes,No,No,3,3,0,Yes
+281,Fiber optic,1,Yes,No,Yes,No,Yes,Yes,No,3,2,1,Yes
+282,Fiber optic,1,Yes,No,No,No,Yes,No,Yes,2,1,1,Yes
+283,Fiber optic,1,Yes,No,Yes,No,Yes,No,No,2,2,0,Yes
+284,Fiber optic,1,Yes,No,No,No,Yes,No,No,1,1,0,Yes
+285,Fiber optic,1,Yes,No,Yes,No,Yes,No,Yes,3,2,1,Yes
+286,Fiber optic,1,Yes,No,No,Yes,Yes,No,No,2,2,0,Yes
+287,Fiber optic,1,Yes,No,Yes,Yes,Yes,No,Yes,4,3,1,Yes
+288,Fiber optic,1,Yes,No,No,Yes,Yes,Yes,No,3,2,1,Yes
+289,Fiber optic,1,Yes,Yes,No,No,Yes,No,No,2,2,0,Yes
+290,Fiber optic,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6,4,2,Yes
+291,Fiber optic,1,Yes,Yes,Yes,Yes,No,Yes,No,4,3,1,Yes
+292,Fiber optic,1,Yes,Yes,No,No,No,Yes,No,2,1,1,Yes
+293,Fiber optic,1,Yes,Yes,Yes,No,No,Yes,No,3,2,1,Yes
+294,Fiber optic,1,Yes,Yes,No,Yes,Yes,Yes,Yes,5,3,2,Yes
+295,Fiber optic,1,Yes,Yes,No,Yes,No,No,No,2,2,0,Yes
+296,Fiber optic,1,Yes,Yes,No,No,No,Yes,Yes,3,1,2,Yes
+297,Fiber optic,1,Yes,Yes,Yes,No,Yes,Yes,Yes,5,3,2,Yes
+298,Fiber optic,1,Yes,Yes,Yes,No,No,No,No,2,2,0,Yes
+299,Fiber optic,1,Yes,Yes,Yes,Yes,No,No,No,3,3,0,Yes
+300,Fiber optic,1,Yes,Yes,No,Yes,No,Yes,Yes,4,2,2,Yes
+301,Fiber optic,1,Yes,Yes,Yes,Yes,No,Yes,Yes,5,3,2,Yes
+302,Fiber optic,1,Yes,Yes,No,Yes,Yes,Yes,No,4,3,1,Yes
+303,Fiber optic,1,Yes,Yes,No,No,No,No,No,1,1,0,Yes
+304,Fiber optic,1,Yes,Yes,Yes,Yes,Yes,Yes,No,5,4,1,Yes
+305,Fiber optic,1,Yes,Yes,No,Yes,Yes,No,Yes,4,3,1,Yes
+306,Fiber optic,1,Yes,Yes,Yes,Yes,No,No,Yes,4,3,1,Yes
+307,Fiber optic,1,Yes,Yes,No,No,Yes,No,Yes,3,2,1,Yes
+308,Fiber optic,1,Yes,Yes,Yes,No,No,No,Yes,3,2,1,Yes
+309,Fiber optic,1,Yes,Yes,Yes,Yes,Yes,No,Yes,5,4,1,Yes
+310,Fiber optic,1,Yes,Yes,No,No,Yes,Yes,Yes,4,2,2,Yes
+311,Fiber optic,1,Yes,Yes,Yes,No,Yes,No,No,3,3,0,Yes
+312,Fiber optic,1,Yes,Yes,No,Yes,Yes,No,No,3,3,0,Yes
+313,Fiber optic,1,Yes,Yes,Yes,No,No,Yes,Yes,4,2,2,Yes
+314,Fiber optic,1,Yes,Yes,No,Yes,No,No,Yes,3,2,1,Yes
+315,Fiber optic,1,Yes,Yes,Yes,Yes,Yes,No,No,4,4,0,Yes
+316,Fiber optic,1,Yes,Yes,No,No,No,No,Yes,2,1,1,Yes
+317,Fiber optic,1,Yes,Yes,No,Yes,No,Yes,No,3,2,1,Yes
+318,Fiber optic,1,Yes,Yes,Yes,No,Yes,No,Yes,4,3,1,Yes
+319,Fiber optic,1,Yes,Yes,No,No,Yes,Yes,No,3,2,1,Yes
+320,Fiber optic,1,Yes,Yes,Yes,No,Yes,Yes,No,4,3,1,Yes
+321,No,1,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,0,0,0,Yes
+322,No,1,Yes,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,0,0,0,Yes

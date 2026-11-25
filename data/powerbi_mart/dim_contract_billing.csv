@@ -1,0 +1,25 @@
+contract_billing_key,contract_type,payment_method,paperless_billing,has_auto_pay,billing_delivery,payment_automation
+1,Month-to-month,Bank transfer (automatic),0,1,Paper Statement,Automatic Payment
+2,Month-to-month,Bank transfer (automatic),1,1,Paperless,Automatic Payment
+3,Month-to-month,Credit card (automatic),0,1,Paper Statement,Automatic Payment
+4,Month-to-month,Credit card (automatic),1,1,Paperless,Automatic Payment
+5,Month-to-month,Electronic check,0,0,Paper Statement,Manual Payment
+6,Month-to-month,Electronic check,1,0,Paperless,Manual Payment
+7,Month-to-month,Mailed check,0,0,Paper Statement,Manual Payment
+8,Month-to-month,Mailed check,1,0,Paperless,Manual Payment
+9,One year,Bank transfer (automatic),0,1,Paper Statement,Automatic Payment
+10,One year,Bank transfer (automatic),1,1,Paperless,Automatic Payment
+11,One year,Credit card (automatic),0,1,Paper Statement,Automatic Payment
+12,One year,Credit card (automatic),1,1,Paperless,Automatic Payment
+13,One year,Electronic check,0,0,Paper Statement,Manual Payment
+14,One year,Electronic check,1,0,Paperless,Manual Payment
+15,One year,Mailed check,0,0,Paper Statement,Manual Payment
+16,One year,Mailed check,1,0,Paperless,Manual Payment
+17,Two year,Bank transfer (automatic),0,1,Paper Statement,Automatic Payment
+18,Two year,Bank transfer (automatic),1,1,Paperless,Automatic Payment
+19,Two year,Credit card (automatic),0,1,Paper Statement,Automatic Payment
+20,Two year,Credit card (automatic),1,1,Paperless,Automatic Payment
+21,Two year,Electronic check,0,0,Paper Statement,Manual Payment
+22,Two year,Electronic check,1,0,Paperless,Manual Payment
+23,Two year,Mailed check,0,0,Paper Statement,Manual Payment
+24,Two year,Mailed check,1,0,Paperless,Manual Payment
