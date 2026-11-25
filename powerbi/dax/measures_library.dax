@@ -1,0 +1,157 @@
+// ============================================================================
+// Power BI DAX Measures Library (DAX Query View / Tabular Script)
+// Project : Customer Churn Intelligence & Retention Action Center
+// Note    : In Power BI Desktop (2024+), open "DAX Query View", paste DEFINE
+//           block or create a [_Measures] table and apply via "Update model".
+// ============================================================================
+
+DEFINE
+    // ------------------------------------------------------------------------
+    // Folder: 01 Executive KPIs
+    // ------------------------------------------------------------------------
+    MEASURE 'fact_customer_churn_scoring'[Total Subscribers] =
+        COUNTROWS ( 'fact_customer_churn_scoring' )
+
+    MEASURE 'fact_customer_churn_scoring'[Observed Churned Subscribers] =
+        CALCULATE (
+            COUNTROWS ( 'fact_customer_churn_scoring' ),
+            'fact_customer_churn_scoring'[observed_churn_flag] = 1
+        )
+
+    MEASURE 'fact_customer_churn_scoring'[Observed Churn Rate] =
+        DIVIDE (
+            [Observed Churned Subscribers],
+            [Total Subscribers],
+            0
+        )
+
+    MEASURE 'fact_customer_churn_scoring'[Mean Calibrated Churn Risk] =
+        AVERAGE ( 'fact_customer_churn_scoring'[churn_probability] )
+
+    MEASURE 'fact_customer_churn_scoring'[Operational Threshold Cutoff] =
+        MAX ( 'fact_customer_churn_scoring'[operational_threshold] )
+
+    MEASURE 'fact_customer_churn_scoring'[Flagged Priority Queue Count] =
+        CALCULATE (
+            COUNTROWS ( 'fact_customer_churn_scoring' ),
+            'fact_customer_churn_scoring'[predicted_high_risk_flag] = 1
+        )
+
+    MEASURE 'fact_customer_churn_scoring'[Flagged Queue Share %] =
+        DIVIDE (
+            [Flagged Priority Queue Count],
+            [Total Subscribers],
+            0
+        )
+
+    // ------------------------------------------------------------------------
+    // Folder: 02 Financial Exposure Proxies (NOT Net Margin or Causal Lift)
+    // ------------------------------------------------------------------------
+    MEASURE 'fact_customer_churn_scoring'[Total Monthly Recurring Bill (USD)] =
+        SUM ( 'fact_customer_churn_scoring'[monthly_charges_usd] )
+
+    MEASURE 'fact_customer_churn_scoring'[Gross Monthly Charges in Queue (Proxy USD)] =
+        SUM ( 'fact_customer_churn_scoring'[monthly_charges_at_risk_proxy] )
+
+    MEASURE 'fact_customer_churn_scoring'[Prob-Weighted Monthly Exposure (Proxy USD)] =
+        SUM ( 'fact_customer_churn_scoring'[expected_monthly_exposure_proxy] )
+
+    MEASURE 'fact_customer_churn_scoring'[Average Monthly Bill (ARPU Proxy USD)] =
+        AVERAGE ( 'fact_customer_churn_scoring'[monthly_charges_usd] )
+
+    MEASURE 'fact_customer_churn_scoring'[Critical & High Risk Subscriber Count] =
+        CALCULATE (
+            COUNTROWS ( 'fact_customer_churn_scoring' ),
+            'fact_customer_churn_scoring'[risk_band] IN { "Critical Risk", "High Risk" }
+        )
+
+    // ------------------------------------------------------------------------
+    // Folder: 03 Recovery Action Center Queue
+    // ------------------------------------------------------------------------
+    MEASURE 'fact_retention_action_queue'[Action Queue Total Items] =
+        COUNTROWS ( 'fact_retention_action_queue' )
+
+    MEASURE 'fact_retention_action_queue'[P1 Immediate Desk Queue] =
+        CALCULATE (
+            COUNTROWS ( 'fact_retention_action_queue' ),
+            'fact_retention_action_queue'[priority_tier] = "P1 - Immediate (Top 250)"
+        )
+
+    MEASURE 'fact_retention_action_queue'[Pending Outreach Count] =
+        CALCULATE (
+            COUNTROWS ( 'fact_retention_action_queue' ),
+            'fact_retention_action_queue'[outreach_status] = "Pending Review"
+        )
+
+    MEASURE 'fact_retention_action_queue'[Completed Outreach Count] =
+        CALCULATE (
+            COUNTROWS ( 'fact_retention_action_queue' ),
+            'fact_retention_action_queue'[outreach_status] IN { "Contacted", "Follow-Up Scheduled", "Resolved" }
+        )
+
+    MEASURE 'fact_retention_action_queue'[Queue Completion Rate %] =
+        DIVIDE (
+            [Completed Outreach Count],
+            [Action Queue Total Items],
+            0
+        )
+
+    // ------------------------------------------------------------------------
+    // Folder: 04 Model & Data Quality Governance
+    // ------------------------------------------------------------------------
+    MEASURE 'fact_model_evaluation'[Champion Test ROC-AUC] =
+        CALCULATE (
+            MAX ( 'fact_model_evaluation'[roc_auc] ),
+            'fact_model_evaluation'[is_selected_champion] = 1
+        )
+
+    MEASURE 'fact_model_evaluation'[Champion Test PR-AUC] =
+        CALCULATE (
+            MAX ( 'fact_model_evaluation'[pr_auc] ),
+            'fact_model_evaluation'[is_selected_champion] = 1
+        )
+
+    MEASURE 'fact_model_evaluation'[Champion Test Brier Score] =
+        CALCULATE (
+            MIN ( 'fact_model_evaluation'[brier_score] ),
+            'fact_model_evaluation'[is_selected_champion] = 1
+        )
+
+    MEASURE 'fact_model_evaluation'[Champion Operational Recall] =
+        CALCULATE (
+            MAX ( 'fact_model_evaluation'[recall_score] ),
+            'fact_model_evaluation'[is_selected_champion] = 1
+        )
+
+    MEASURE 'fact_model_evaluation'[Champion Operational Precision] =
+        CALCULATE (
+            MAX ( 'fact_model_evaluation'[precision_score] ),
+            'fact_model_evaluation'[is_selected_champion] = 1
+        )
+
+    MEASURE 'fact_data_quality_audit'[SQL Quality Pass Rate %] =
+        DIVIDE (
+            CALCULATE (
+                COUNTROWS ( 'fact_data_quality_audit' ),
+                'fact_data_quality_audit'[check_status] = "PASS"
+            ),
+            COUNTROWS ( 'fact_data_quality_audit' ),
+            0
+        )
+
+    MEASURE 'fact_customer_churn_scoring'[Calibration Gap (Pred - Observed)] =
+        [Mean Calibrated Churn Risk] - [Observed Churn Rate]
+
+    MEASURE 'fact_customer_churn_scoring'[Last Scoring Timestamp UTC] =
+        MAX ( 'fact_customer_churn_scoring'[scored_at_utc] )
+
+EVALUATE
+SUMMARIZECOLUMNS (
+    "Total Subscribers", [Total Subscribers],
+    "Observed Churn Rate", [Observed Churn Rate],
+    "Flagged Priority Queue", [Flagged Priority Queue Count],
+    "Gross Monthly Charges in Queue Proxy", [Gross Monthly Charges in Queue (Proxy USD)],
+    "Prob-Weighted Exposure Proxy", [Prob-Weighted Monthly Exposure (Proxy USD)],
+    "Champion Test ROC-AUC", [Champion Test ROC-AUC],
+    "Champion Test PR-AUC", [Champion Test PR-AUC]
+)

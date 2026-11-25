@@ -1,0 +1,79 @@
+{
+  "name": "Churn Intelligence Dark Executive Theme",
+  "dataColors": [
+    "#5EE0B5",
+    "#8AB4F8",
+    "#FBBF24",
+    "#F87171",
+    "#38BDF8",
+    "#A78BFA",
+    "#34D399",
+    "#94A3B8"
+  ],
+  "background": "#0B1220",
+  "foreground": "#F1F5F9",
+  "tableAccent": "#5EE0B5",
+  "good": "#5EE0B5",
+  "neutral": "#FBBF24",
+  "bad": "#F87171",
+  "maximum": "#F87171",
+  "center": "#8AB4F8",
+  "minimum": "#5EE0B5",
+  "textClasses": {
+    "callout": {
+      "fontSize": 22,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#5EE0B5"
+    },
+    "title": {
+      "fontSize": 11,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#F1F5F9"
+    },
+    "header": {
+      "fontSize": 10,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#ACBBD0"
+    },
+    "label": {
+      "fontSize": 9,
+      "fontFace": "Segoe UI",
+      "color": "#ACBBD0"
+    }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [
+          {
+            "show": true,
+            "color": { "solid": { "color": "#141F30" } },
+            "transparency": 0
+          }
+        ],
+        "border": [
+          {
+            "show": true,
+            "color": { "solid": { "color": "#304158" } },
+            "radius": 8
+          }
+        ]
+      }
+    },
+    "page": {
+      "*": {
+        "background": [
+          {
+            "color": { "solid": { "color": "#0B1220" } },
+            "transparency": 0
+          }
+        ],
+        "outspace": [
+          {
+            "color": { "solid": { "color": "#0B1220" } }
+          }
+        ]
+      }
+    }
+  }
+}

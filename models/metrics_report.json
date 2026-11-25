@@ -1,0 +1,129 @@
+{
+  "champion_key": "LightGBM | Natural Prior (Regularized)",
+  "champion_model_name": "LightGBM",
+  "champion_imbalance_strategy": "Natural Prior (Regularized)",
+  "model_version": "churn-risk-v1.0",
+  "data_version": "IBM-Telco-v1.0-7043",
+  "evaluated_at_utc": "2026-11-25T06:23:48Z",
+  "split_sizes": {
+    "total": 7043,
+    "train": 4225,
+    "validation": 1409,
+    "test": 1409
+  },
+  "natural_churn_rates": {
+    "overall": 0.2654,
+    "train": 0.2653,
+    "validation": 0.2654,
+    "test": 0.2654
+  },
+  "operational_threshold": 0.39,
+  "operational_policy_assumptions": {
+    "capacity_cap_pct": 0.3,
+    "outreach_cost_usd_assumption": 8.0,
+    "missed_churn_penalty_proxy_usd_assumption": 65.0,
+    "disclaimer": "Planning assumptions for threshold optimization only; not realized causal savings."
+  },
+  "validation_metrics_default_050": {
+    "threshold": 0.5,
+    "roc_auc": 0.8265,
+    "pr_auc": 0.6226,
+    "brier_score": 0.1436,
+    "ece": 0.023,
+    "mean_predicted_prob": 0.2692,
+    "observed_churn_rate": 0.2654,
+    "precision": 0.6278,
+    "recall": 0.5321,
+    "f1": 0.576,
+    "flagged_rate": 0.225,
+    "tp": 199,
+    "fp": 118,
+    "tn": 917,
+    "fn": 175
+  },
+  "validation_metrics_operational": {
+    "threshold": 0.39,
+    "roc_auc": 0.8265,
+    "pr_auc": 0.6226,
+    "brier_score": 0.1436,
+    "ece": 0.023,
+    "mean_predicted_prob": 0.2692,
+    "observed_churn_rate": 0.2654,
+    "precision": 0.5721,
+    "recall": 0.6364,
+    "f1": 0.6025,
+    "flagged_rate": 0.2952,
+    "tp": 238,
+    "fp": 178,
+    "tn": 857,
+    "fn": 136
+  },
+  "test_metrics_default_050": {
+    "threshold": 0.5,
+    "roc_auc": 0.8478,
+    "pr_auc": 0.664,
+    "brier_score": 0.1351,
+    "ece": 0.0208,
+    "mean_predicted_prob": 0.2661,
+    "observed_churn_rate": 0.2654,
+    "precision": 0.6319,
+    "recall": 0.5187,
+    "f1": 0.5698,
+    "flagged_rate": 0.2179,
+    "tp": 194,
+    "fp": 113,
+    "tn": 922,
+    "fn": 180
+  },
+  "test_metrics_operational": {
+    "threshold": 0.39,
+    "roc_auc": 0.8478,
+    "pr_auc": 0.664,
+    "brier_score": 0.1351,
+    "ece": 0.0208,
+    "mean_predicted_prob": 0.2661,
+    "observed_churn_rate": 0.2654,
+    "precision": 0.6024,
+    "recall": 0.6684,
+    "f1": 0.6337,
+    "flagged_rate": 0.2945,
+    "tp": 250,
+    "fp": 165,
+    "tn": 870,
+    "fn": 124
+  },
+  "test_bootstrap_95ci": {
+    "roc_auc_95ci": [
+      0.8266,
+      0.8687
+    ],
+    "pr_auc_95ci": [
+      0.6131,
+      0.7104
+    ],
+    "brier_95ci": [
+      0.1238,
+      0.1443
+    ],
+    "f1_operational_95ci": [
+      0.5897,
+      0.6726
+    ],
+    "recall_operational_95ci": [
+      0.6139,
+      0.7184
+    ],
+    "precision_operational_95ci": [
+      0.5502,
+      0.6463
+    ]
+  },
+  "portfolio_exposure_proxies": {
+    "full_dataset_total_monthly_charges_usd": 456116.6,
+    "full_dataset_flagged_queue_count": 2020,
+    "full_dataset_flagged_monthly_charges_at_risk_proxy_usd": 156450.75,
+    "full_dataset_prob_weighted_monthly_exposure_proxy_usd": 138142.62,
+    "untouched_test_flagged_monthly_charges_at_risk_proxy_usd": 31538.7,
+    "proxy_definition": "Gross recurring MonthlyCharges (USD/month) of flagged subscribers. Does NOT account for gross margin, tax, or causal intervention uplift."
+  }
+}
